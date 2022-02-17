@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	color: #FFF;
+  height: 100vh;
+	background: linear-gradient(to right, #6B7280, #111827);
+  overflow: hidden;
+}
+
+.every{display: flex;flex-direction: column;}
+header{
+  padding: 3rem 2rem 1rem 2rem;
+  color: silver;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  overflow: auto;
+}
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: auto;
+}
+.toDoList{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  overflow: auto;
+}
+.toDoList h2{
+  font-size: 1.5rem;
+	font-weight: 600;
+  color: silver;
+  padding-bottom: 1rem;
+}
+.task{
+  display: flex;
+	justify-content: space-between;
+	background-color: #111827;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+  border: 2px solid silver;
+}
+#forms{
+  display: flex;
+  gap: 1rem;
+}
+#taskInput{
+  background-color: #111827;
+  padding: 1rem;
+  width: 80%;
+	border-radius: 2rem;
+	color: grey;
+	font-size: 1.25rem;
+}
+#taskInput::placeholder {
+	color: #6B7280;
+}
+#addBtn{
+  font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, grey, #fafafa);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.text{
+  color: #fafafa;
+	font-size: 1.125rem;
+	transition: 0.4s;
+}
+.text:not(:read-only) {
+	color: silver;
+}
+.actions{display: flex;}
+.actions button {
+	cursor: pointer;
+	margin: 0 0.4rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+.actions button:hover {
+	opacity: 0.8;
+}
+.actions button:active {
+	opacity: 0.6;
+}
+.edit {
+	background-image: linear-gradient(to right, grey, #fafafa);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.delete {
+	background-image: linear-gradient(to right, #fafafa, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
